@@ -17,8 +17,8 @@ function baseCookieOptions() {
 
   return {
     httpOnly: true,
-    secure: isProduction,
-    sameSite,
+    secure: true,
+    sameSite: "none",
     path: "/",
   };
 }
